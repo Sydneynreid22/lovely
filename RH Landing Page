@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Recipe Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Recipe Hub!</h1>
+  </header>
+
+  <!-- Login Section -->
+  <section id="login">
+    <h2>Your Favorite Recipes, All in One Place</h2>
+    <p>Already a member?</p>
+    <a href="#join" class="cta-btn">Login Here</a>
+  </section>
+<p></p>
+  <!-- Information Section -->
+   <label for="name">Name</label>
+   <p></p>
+<input type="text" id="name" name="name" placeholder="Enter your name">
+<p></p>
+<label for="name">Email</label>
+<p></p>
+<input type="text" id="email" name="email" placeholder="Enter your email">
+<p></p>
+<label for="name">Password</label>
+<p></p>
+<input type="text" id="DOB" name="DOB" placeholder="Create your password"
+<p></p>
+<label for="name">Date of Birth</label>
+<p></p>
+<input type="text" id="name" name="name" placeholder="Enter your Date of Birth">
+
+<div style="
+    width: 200px;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+">
+    Sign Up
+</div>
+
+
+
+</body>
+</html>
