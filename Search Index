@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Hub – Search Results</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+
+    /* Header */
+    header {
+      background-color: #ff8c42;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Search bar */
+    .search-bar {
+      margin: 25px auto;
+      max-width: 500px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .search-bar button {
+      background-color: #ff8c42;
+      border: none;
+      padding: 12px 20px;
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Filter suggestion box */
+    .filter-box {
+      max-width: 900px;
+      margin: 0 auto 20px;
+      background-color: #ffe5d1;
+      padding: 15px 20px;
+      border-left: 6px solid #ff8c42;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    /* Results container */
+    .results {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .results h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Recipe cards (no images now) */
+    .recipe-card {
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .recipe-card h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .recipe-card p {
+      margin: 5px 0 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>Recipe Hub</header>
+
+  <!-- Search bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search recipes..." value="Search Recipes Here...">
+    <button>Search</button>
+  </div>
+
+  <!-- Filter suggestion box -->
+  <div class="filter-box">
+    Not the recipe you're looking for? Try filtering your search results!
+  </div>
+
+  <!-- Search Results -->
+  <div class="results">
+    <h2>Search Results for "chicken"</h2>
+
+    <!-- Recipe Card 1 -->
+    <div class="recipe-card">
+      <h3>Grilled Lemon Chicken</h3>
+    </div>
+
+    <!-- Recipe Card 2 -->
+    <div class="recipe-card">
+      <h3>Chicken Alfredo Pasta</h3>
+    </div>
+
+    <!-- Recipe Card 3 -->
+    <div class="recipe-card">
+      <h3>Spicy Chicken Tacos</h3>
+    </div>
+
+  </div>
+
+</body>
+</html>
