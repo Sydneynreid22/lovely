@@ -1,4 +1,4 @@
-/* Base styles */
+/* ---------------- Base Styles ---------------- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,14 +8,14 @@ body {
   color: #333;
 }
 
-/* Top Navigation */
+/* ---------------- Top Navigation ---------------- */
 .top-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: #ff8c42;
+  background-color: #ff8c42; /* Orange header nav */
 }
 
 .top-nav li {
@@ -35,10 +35,10 @@ body {
   outline-offset: 2px;
 }
 
-/* Header */
+/* ---------------- Header ---------------- */
 header a {
   display: block;
-  background-color: #ff8c42;
+  background-color: #ff8c42; /* Orange header */
   padding: 20px;
   text-align: center;
   font-size: 26px;
@@ -52,17 +52,26 @@ header a:focus {
   outline-offset: 2px;
 }
 
-/* Hero Section */
+/* ---------------- Hero Section ---------------- */
 .hero {
   text-align: center;
   padding: 40px 20px;
-  background-color: #ffe5d1;
+  background-color: #ffe5d1; /* Light orange hero box */
 }
 
-.hero h1 { margin: 0; font-size: 40px; color: #333; }
-.hero p { font-size: 18px; color: #555; margin-top: 10px; }
+.hero h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #333;
+}
 
-/* Section styles */
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* ---------------- Content Sections ---------------- */
 .cuisine-section, .content-section {
   max-width: 1100px;
   margin: 40px auto;
@@ -76,7 +85,7 @@ header a:focus {
   color: #333;
 }
 
-/* Grids */
+/* ---------------- Grids ---------------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -84,37 +93,65 @@ header a:focus {
 }
 
 .cuisine-card, .recipe-card {
-  background: white;
+  background: white; /* Box color */
   padding: 25px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08); /* Shadow */
   transition: transform 0.2s ease;
   cursor: pointer;
 }
 
-.cuisine-card:hover, .recipe-card:hover { transform: scale(1.05); }
+.cuisine-card:hover, .recipe-card:hover {
+  transform: scale(1.05);
+}
 
-.cuisine-card h3, .recipe-card h3 { margin: 10px 0 5px; font-size: 20px; color: #333; }
-.cuisine-card p, .recipe-card p { margin: 0; font-size: 14px; color: #666; }
-.cuisine-card img, .recipe-card img { width: 100%; border-radius: 8px; }
+.cuisine-card h3, .recipe-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #333;
+}
 
-/* Links */
-.link { text-decoration: underline; color: #4A90E2; font-size: 18px; }
-.link:focus { outline: 3px solid #ff8c42; outline-offset: 2px; }
+.cuisine-card p, .recipe-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
 
-/* Footer */
+.cuisine-card img, .recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ---------------- Links ---------------- */
+.link, .cta-btn {
+  text-decoration: underline;
+  color: #4A90E2;
+  font-size: 18px;
+}
+
+.link:focus, .cta-btn:focus {
+  outline: 3px solid #ff8c42;
+  outline-offset: 2px;
+}
+
+/* ---------------- Footer ---------------- */
 footer {
   margin-top: 50px;
   padding: 20px;
   text-align: center;
-  background-color: #ff8c42;
+  background-color: #ff8c42; /* Orange footer */
   color: white;
 }
 
-.footer-links a img { width: 24px; margin: 0 5px; vertical-align: middle; }
+.footer-links a img {
+  width: 24px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
 
-/* Forms */
+/* ---------------- Forms ---------------- */
 form {
   max-width: 500px;
   margin: 20px auto;
@@ -145,8 +182,8 @@ input:focus {
   outline-offset: 2px;
 }
 
-/* CTA buttons */
-.cta-btn {
+/* ---------------- Buttons ---------------- */
+.cta-btn, .signup-btn {
   display: inline-block;
   background-color: #007BFF;
   color: white;
@@ -159,18 +196,18 @@ input:focus {
   cursor: pointer;
 }
 
-.cta-btn:focus, .signup-btn:focus {
-  outline: 3px solid #ff8c42;
-  outline-offset: 2px;
-}
-
 .signup-btn {
   border: none;
   width: 200px;
   margin: 20px auto;
 }
 
-/* Search Bar & Filter Box */
+.cta-btn:focus, .signup-btn:focus {
+  outline: 3px solid #ff8c42;
+  outline-offset: 2px;
+}
+
+/* ---------------- Search Bar ---------------- */
 .search-bar {
   margin: 25px auto;
   max-width: 500px;
@@ -187,7 +224,7 @@ input:focus {
 }
 
 .search-bar button {
-  background-color: #ff8c42;
+  background-color: #ff8c42; /* Orange button */
   border: none;
   padding: 12px 20px;
   color: white;
@@ -196,18 +233,19 @@ input:focus {
   cursor: pointer;
 }
 
+/* ---------------- Filter Box ---------------- */
 .filter-box {
   max-width: 900px;
   margin: 0 auto 20px;
-  background-color: #ffe5d1;
+  background-color: #ffe5d1; /* Light orange box */
   padding: 15px 20px;
-  border-left: 6px solid #ff8c42;
+  border-left: 6px solid #ff8c42; /* Orange left border */
   border-radius: 8px;
   font-size: 16px;
   color: #444;
 }
 
-/* Search Results */
+/* ---------------- Search Results ---------------- */
 .results h2 {
   font-size: 24px;
   margin-bottom: 20px;
