@@ -76,6 +76,7 @@ header a:focus {
   color: #333;
 }
 
+/* Grids */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -96,7 +97,6 @@ header a:focus {
 
 .cuisine-card h3, .recipe-card h3 { margin: 10px 0 5px; font-size: 20px; color: #333; }
 .cuisine-card p, .recipe-card p { margin: 0; font-size: 14px; color: #666; }
-
 .cuisine-card img, .recipe-card img { width: 100%; border-radius: 8px; }
 
 /* Links */
@@ -113,3 +113,102 @@ footer {
 }
 
 .footer-links a img { width: 24px; margin: 0 5px; vertical-align: middle; }
+
+/* Forms */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="search"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+input:focus {
+  outline: 3px solid #ff8c42;
+  outline-offset: 2px;
+}
+
+/* CTA buttons */
+.cta-btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta-btn:focus, .signup-btn:focus {
+  outline: 3px solid #ff8c42;
+  outline-offset: 2px;
+}
+
+.signup-btn {
+  border: none;
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* Search Bar & Filter Box */
+.search-bar {
+  margin: 25px auto;
+  max-width: 500px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background-color: #ff8c42;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter-box {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  background-color: #ffe5d1;
+  padding: 15px 20px;
+  border-left: 6px solid #ff8c42;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Search Results */
+.results h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
