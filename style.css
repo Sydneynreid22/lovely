@@ -256,22 +256,23 @@ input:focus {
 }
 
 /* ----------------- LOGO ----------------- */
+/* ---------------- Header and Logo Center Fix ---------------- */
 .site-header {
-  padding: 5px 10px;
+  padding: 20px 0;                 /* more vertical padding */
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  text-align: center;               /* centers the logo horizontally */
 }
 
 .logo {
-  height: 40px !important;
+  height: 80px;                     /* larger, visible size */
   width: auto;
-  display: block;
+  display: inline-block;
 }
 
+/* Responsive: smaller on mobile */
 @media (max-width: 600px) {
   .logo {
-    height: 30px !important;
+    height: 60px;                   /* smaller on mobile but still visible */
   }
 }
+
