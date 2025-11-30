@@ -59,6 +59,22 @@
     <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest"><img src="images/pinterest-icon.png" alt="Pinterest"></a>
   </div>
 </footer>
+<script>
+  // Select the form inside the login section
+  const form = document.querySelector('#login-form form');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent the page from reloading
+
+    // Get form values
+    const name = document.getElementById('signup-name').value;
+    const email = document.getElementById('signup-email').value;
+    const dob = document.getElementById('signup-dob').value;
+
+    // Simple feedback
+    alert(`Thanks for signing up, ${name}!\nEmail: ${email}\nDOB: ${dob}`);
+  });
+</script>
 
 </body>
 </html>
