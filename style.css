@@ -26,9 +26,13 @@ body {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  padding: 15px 0;
-  display: block;
+  padding: 15px 10px;  /* top/bottom 15px, left/right 10px */
+  min-height: 46px;    /* ensures tap target meets 46px height */
+  display: flex;       /* allows vertical centering */
+  align-items: center;
+  justify-content: center;
 }
+
 
 .top-nav a:focus {
   outline: 3px solid #ffe5d1;
