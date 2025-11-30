@@ -33,7 +33,7 @@
 <!-- Sign-Up / Login Form -->
 <section id="login-form" class="content-section">
   <h2>Create Your Account</h2>
-  <form>
+  <form id="signup-form">
     <label for="signup-name">Name</label>
     <input type="text" id="signup-name" name="signup-name" placeholder="Enter your name" required>
 
@@ -44,11 +44,28 @@
     <input type="password" id="signup-password" name="signup-password" placeholder="Create your password" required>
 
     <label for="signup-dob">Date of Birth</label>
-    <input type="date" id="signup-dob" name="signup-dob" placeholder="Enter your date of birth" required>
+    <input type="date" id="signup-dob" name="signup-dob" required>
 
     <button type="submit" class="cta-btn signup-btn">Sign Up</button>
   </form>
 </section>
+
+<script>
+const form = document.getElementById('signup-form');
+
+form.addEventListener('submit', function(e) {
+  if (!form.checkValidity()) {
+    e.preventDefault(); // prevent submission
+  } else {
+    e.preventDefault();
+    const name = document.getElementById('signup-name').value;
+    const email = document.getElementById('signup-email').value;
+    const dob = document.getElementById('signup-dob').value;
+    alert(`Thanks for signing up, ${name}!\nEmail: ${email}\nDOB: ${dob}`);
+  }
+});
+</script>
+
 
 <!-- Footer -->
 <footer>
