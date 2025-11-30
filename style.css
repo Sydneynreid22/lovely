@@ -261,3 +261,8 @@ input:focus {
   width: auto;  /* Keeps the original aspect ratio */
   display: block;
 }
+@media (max-width: 600px) {
+  .logo {
+    height: 40px; /* smaller on mobile */
+  }
+}
