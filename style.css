@@ -256,13 +256,22 @@ input:focus {
 }
 
 /* ----------------- LOGO ----------------- */
+.site-header {
+  padding: 5px 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .logo {
-  height: 60px; /* Adjust this to fit your site, e.g., 50px or 40px */
-  width: auto;  /* Keeps the original aspect ratio */
+  height: 40px !important;
+  width: auto;
   display: block;
 }
+
 @media (max-width: 600px) {
   .logo {
-    height: 40px; /* smaller on mobile */
+    height: 30px !important;
   }
 }
