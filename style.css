@@ -254,3 +254,10 @@ input:focus {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
+/* ----------------- LOGO ----------------- */
+.logo {
+  height: 60px; /* Adjust this to fit your site, e.g., 50px or 40px */
+  width: auto;  /* Keeps the original aspect ratio */
+  display: block;
+}
